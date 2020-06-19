@@ -1,3 +1,5 @@
+import requests
+
 def shorterLink():
     apiKey = input("Your API key: ")
     url = input("Your URL: ")
