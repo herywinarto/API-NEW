@@ -1,3 +1,5 @@
+import requests
+
 def GoogleDriveUpload():
     apiKey = input("Your API key: ")
     path = input("Your File Path: ")
