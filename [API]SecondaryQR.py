@@ -1,4 +1,4 @@
-import requests
+import requests, json
 
 def QRV2():
     apiKey = input("Your API key: ")
