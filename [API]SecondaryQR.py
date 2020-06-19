@@ -1,3 +1,5 @@
+import requests
+
 def QRV2():
     apiKey = input("Your API key: ")
     headers = {
