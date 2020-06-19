@@ -1,4 +1,4 @@
-import requests
+import requests, json
 
 def APIKeyStatus():
     apiKey = input("Your API key: ")
