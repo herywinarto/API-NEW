@@ -1,4 +1,4 @@
-import requests
+import requests, json
 
 def primary2Secondary():
     apiKey = input("Your API key: ")
