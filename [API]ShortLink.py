@@ -1,4 +1,4 @@
-import requests
+import requests, json
 
 def shorterLink():
     apiKey = input("Your API key: ")
