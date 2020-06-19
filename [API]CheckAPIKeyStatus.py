@@ -1,3 +1,5 @@
+import requests
+
 def APIKeyStatus():
     apiKey = input("Your API key: ")
     headers = {"apiKey": apiKey} ## APIKEY, YOU CAN BUY FROM ME IN WHATSAPP: +6289625658302
