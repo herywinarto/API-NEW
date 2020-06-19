@@ -1,3 +1,5 @@
+import requests
+
 def primary2Secondary():
     apiKey = input("Your API key: ")
     authToken = input("Your Primary Token: ")
