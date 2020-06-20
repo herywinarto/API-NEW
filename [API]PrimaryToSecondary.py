@@ -1,4 +1,4 @@
-import requests, json
+import requests, json, random
 
 def primary2Secondary():
     apiKey = input("Your API key: ")
@@ -6,7 +6,7 @@ def primary2Secondary():
     headers = {
         "apiKey": apiKey, ## APIKEY, YOU CAN BUY FROM ME IN WHATSAPP: +6289625658302
         "appName": "IOSIPAD\t10.5.2\tiPhone 8\t11.2.5", ## APPNAME, YOU CAN CUSTOMIZE IT
-        "server": "pool-1", ## IP POOL SELECTION: pool-1 / pool-2 / vip(COMING SOON)
+        "server": random.choice(["pool-1","pool-2"]), ## IP POOL SELECTION: pool-1 / pool-2 / vip(COMING SOON)
         "sysname": "BE-Team", ## SYSTEM NAME, YOU CAN CUSTOMIZE IT
         "authToken": authToken## YOUR PRIMARY TOKEN
         }
