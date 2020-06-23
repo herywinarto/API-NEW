@@ -10,16 +10,16 @@ def QRV2():
         "sysname": "BE-Team" ## SYSTEM NAME, YOU CAN CUSTOMIZE IT
         }
     main = json.loads(requests.get("https://api.be-team.me/qrv2",headers=headers).text)
-    if main["status"] != 200:
-        print("[ Error ] " + main["reason"])
+    print("QR Link: " + main["result"]["qr_link"])
+    print("Login IP: " + main["result"]["login_ip"])
+    if not headers["cert"]:
+        print("Callback Pincode: " + main["result"]["cb_pincode"])
+        result = json.loads(requests.get(main["result"]["cb_pincode"],headers=headers).text)
+        print("Your Pincode: " + result["result"])
+    result = json.loads(requests.get(main["result"]["cb_token"],headers=headers).text)
+    if result["status"] != 200:
+        print("[ Error ] "+ result["reason"])
     else:
-        print("QR Link: " + main["result"]["qr_link"])
-        print("Login IP: " + main["result"]["login_ip"])
-        if not headers["cert"]:
-            print("Callback Pincode: " + main["result"]["cb_pincode"])
-            result = json.loads(requests.get(main["result"]["cb_pincode"],headers=headers).text)
-            print("Your Pincode: " + result["result"])
-        result = json.loads(requests.get(main["result"]["cb_token"],headers=headers).text)
         print("Your Cert: " + result["result"]["cert"])
         print("Your Token: " + result["result"]["token"])
     
