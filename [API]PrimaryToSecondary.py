@@ -11,8 +11,11 @@ def primary2Secondary():
         "authToken": authToken## YOUR PRIMARY TOKEN
         }
     main = json.loads(requests.get("https://api.be-team.me/primary2secondary",headers=headers).text)
-    print("Login IP: " + main["result"]["login_ip"])
-    print("Your Token: " + main["result"]["token"])
+    if main["status"] != 200:
+        print("[ Error ] " + main["reason"])
+    else:
+        print("Login IP: " + main["result"]["login_ip"])
+        print("Your Token: " + main["result"]["token"])
     
     
 primary2Secondary()
