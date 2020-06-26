@@ -1,5 +1,11 @@
 import requests, json, random
 
+# APPNAME LIST: ( THIS APPNAME JUST FOR GET QR, IF FOR LOGIN U CAN USE OLDER ONE )
+# "IOSIPAD\t10.10.0\tiPhone 8\t11.2.5"
+# "CHROMEOS\t2.3.8\tChrome OS\t1"
+# "DESKTOPWIN\t6.0.3\tWindows\t10"
+# "DESKTOPMAC\t6.0.3\tMAC\t10.15"
+
 def primary2Secondary():
     apiKey = input("Your API key: ")
     authToken = input("Your Primary Token: ")
