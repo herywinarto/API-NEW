@@ -7,7 +7,7 @@ import requests, json, random
 # "DESKTOPMAC\t6.0.3\tMAC\t10.15"
 
 def QRV2():
-    apiKey = input("Your API key: ")
+    apiKey = "YOUR_APIKEY_HERE"
     headers = {
         "apiKey":apiKey, ## APIKEY, YOU CAN BUY FROM ME IN WHATSAPP: +6289625658302
         "appName": "IOSIPAD\t10.5.2\tiPhone 8\t11.2.5", ## APPNAME, YOU CAN CUSTOMIZE IT
