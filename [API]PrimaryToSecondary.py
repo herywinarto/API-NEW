@@ -7,8 +7,8 @@ import requests, json, random
 # "DESKTOPMAC\t6.0.3\tMAC\t10.15"
 
 def primary2Secondary():
-    apiKey = input("Your API key: ")
-    authToken = input("Your Primary Token: ")
+    apiKey = "YOUR_APIKEY_HERE"
+    authToken = "1234567890" ## EXAMPLE
     headers = {
         "apiKey": apiKey, ## APIKEY, YOU CAN BUY FROM ME IN WHATSAPP: +6289625658302
         "appName": "IOSIPAD\t10.5.2\tiPhone 8\t11.2.5", ## APPNAME, YOU CAN CUSTOMIZE IT
