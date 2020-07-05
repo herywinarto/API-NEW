@@ -6,9 +6,9 @@ def APIKeyStatus():
     main = json.loads(requests.get("https://api.be-team.me/apikey",headers=headers).text)
     print("Expired: "+main["result"]["expired"])
     print("Usage: "+main["result"]["usage"])
-    print("IsActive: "+main["result"]["isActive"])
-    print("IsLimit: "+main["result"]["isLimit"])
-    print("IsVIP: "+main["result"]["isVIP"])
+    print("IsActive: "+str(main["result"]["isActive"]))
+    print("IsLimit: "str(+main["result"]["isLimit"]))
+    print("IsVIP: "str(+main["result"]["isVIP"]))
     print("UsageRestartDate: "+main["result"]["restartTime"])
 
 APIKeyStatus()
