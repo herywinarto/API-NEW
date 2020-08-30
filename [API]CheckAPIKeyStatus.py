@@ -7,8 +7,8 @@ def APIKeyStatus():
     print("Expired: "+main["result"]["expired"])
     print("Usage: "+main["result"]["usage"])
     print("IsActive: "+str(main["result"]["isActive"]))
-    print("IsLimit: "str(+main["result"]["isLimit"]))
-    print("IsVIP: "str(+main["result"]["isVIP"]))
+    print("IsLimit: "+str(main["result"]["isLimit"]))
+    print("IsVIP: "+str(main["result"]["isVIP"]))
     print("UsageRestartDate: "+main["result"]["restartTime"])
 
 APIKeyStatus()
