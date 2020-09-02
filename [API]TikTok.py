@@ -7,4 +7,4 @@ def TiktokURL():
     main = json.loads(requests.get("https://api.be-team.me/tiktok?url="+url,headers=headers).text)
     print(json.dumps(main, indent=4, sort_keys=True))
 
-TiktokUserID()
+TiktokURL()
