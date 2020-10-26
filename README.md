@@ -19,6 +19,8 @@ Price: 4$ Paypal or 40K ATM/OVO/DANA or 50k Pulsa (PerMonth)
 
 ## LOG LAST UPDATE ##
 
+- FIX TIKTOK AND INSTAGRAM > 26/10/20
+- ADD PRIMBON AND GOOGLE SEARCH > 26/10/20
 - ADD YTMP3.CC > 22/10/20
 - ADD COOKPAD > 20/10/20
 - ADD INSTASTORIES > 08/10/20
@@ -38,4 +40,4 @@ Price: 4$ Paypal or 40K ATM/OVO/DANA or 50k Pulsa (PerMonth)
 - ADD SIMISIMI > 05/07/20
 - ADD PACKAGE > 19/06/20
 
-Last Update Time: 05/07/20
+Last Update Time: 26/10/20
