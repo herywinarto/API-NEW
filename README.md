@@ -19,6 +19,8 @@ Price: 4$ Paypal or 40K ATM/OVO/DANA or 50k Pulsa (PerMonth)
 
 ## LOG LAST UPDATE ##
 
+- ADD SMULE PERFORMANCE LIST > 07/11/20
+- FIX SMULE URL PATERN AND TWITTER API > 07/11/20
 - ADD TWITTER AND 9GAG > 06/11/20
 - FIX SOME BUG > 06/11/20
 - FIX ANIME > 28/10/20
@@ -43,4 +45,4 @@ Price: 4$ Paypal or 40K ATM/OVO/DANA or 50k Pulsa (PerMonth)
 - ADD SIMISIMI > 05/07/20
 - ADD PACKAGE > 19/06/20
 
-Last Update Time: 06/11/20
+Last Update Time: 07/11/20
