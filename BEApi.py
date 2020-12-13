@@ -10,30 +10,32 @@ class BEApi():
         print(json.dumps(djson, indent=4, sort_keys=True))
         
     def sendPost(self, path, headers=None, data=None, files=None, djson=None):
+        if headers:
+            headers = {**headers, **self.headers}
+        else:
+            headers = self.headers
         try:
-            if headers:
-                headers = {**headers, **self.headers}
-            else:
-                headers = self.headers
             r = json.loads(self.session.post(self.host+path,headers=headers,data=data,files=files,json=djson).text)
-            if r["status"] != 200:
-                raise Exception(str(r))
-            return r
         except:
             raise Exception("Oops... Like api is down :(")
+        if r["status"] != 200:
+            raise Exception(str(r))
+        return r
+
     
     def sendGet(self, path, headers=None):
-        try:
-            if headers:
-                headers = {**headers, **self.headers}
-            else:
-                headers = self.headers
+        if headers:
+            headers = {**headers, **self.headers}
+        else:
+            headers = self.headers
+        try:  
             r = json.loads(self.session.get(self.host+path,headers=headers).text)
-            if r["status"] != 200:
-                raise Exception(str(r))
-            return r
         except:
             raise Exception("Oops... Like api is down :(")
+        if r["status"] != 200:
+            raise Exception(str(r))
+        return r
+
 
     ### WALLPAPER HD ###
     def checkStatusApikey(self):
@@ -297,3 +299,10 @@ class BEApi():
         return self.sendGet("/ytmp4?url="+url)
     def youtubeMp4Search(self, search):
         return self.sendGet("/ytmp4?search="+search)
+
+# APPNAME LIST FOR QR (EXAMPLE) :
+# "IOSIPAD\t10.10.0\tiPhone 8\t11.2.5"
+# "CHROMEOS\t2.3.8\tChrome OS\t1"
+# "DESKTOPWIN\t6.0.3\tWindows\t10"
+# "DESKTOPMAC\t6.0.3\tMAC\t10.15"
+
