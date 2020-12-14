@@ -19,6 +19,10 @@ Price: 4$ Paypal or 40K ATM/OVO/DANA or 50k Pulsa (PerMonth)
 
 ## LOG LAST UPDATE ##
 
+- ADD uploadStorage (UPLOAD FILE AND GET STATIC LINK) > 14/12/20
+- ADD instaHighlight (DOWNLOAD INSTAGRAM HIGHLIGHT) > 14/12/20
+- ADD instaTv (DOWNLOAD INSTAGRAM TV) > 14/12/20
+- ADD instaStory (DOWNLOAD INSTAGRAM STORY) > 14/12/20
 - REWORK API > 13/12/20
 
-Last Update Time: 13/12/20
+Last Update Time: 14/12/20
