@@ -37,7 +37,7 @@ class BEApi():
         return r
 
 
-    ### WALLPAPER HD ###
+    ### APIKEY STATUS CHECKER ###
     def checkStatusApikey(self):
         return self.sendGet("/apikey")
 
@@ -163,6 +163,15 @@ class BEApi():
         # PROFILE #
     def instaProfile(self, userid): 
         return self.sendGet("/instaprofile?userid="+userid)
+        # STORY #
+    def instaStory(self, userid): 
+        return self.sendGet("/instastory?userid="+userid)
+        # TV #
+    def instaTv(self, url): 
+        return self.sendGet("/instapost?url="+url)
+        # HIGHLIGHT #
+    def instaHighlight(self, userid): 
+        return self.sendGet("/instahighlight?userid="+userid)
 
     ### JOOX DOWNLOAD ###
     def jooxSearch(self, search):
@@ -277,6 +286,10 @@ class BEApi():
         # PROFILE #
     def twitterProfile(self, userid): 
         return self.sendGet("/twitter?userid="+userid)
+
+    ### FILE TO URL ( STORAGE ) ###
+    def uploadStorage(self, path):
+        return self.sendPost("/storage",files={"file": open(path,"rb")})
 
     ### SCREENSHOT WEBSITE ###
     def webScreenshot(self, url):
